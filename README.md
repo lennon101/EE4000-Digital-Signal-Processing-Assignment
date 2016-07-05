@@ -11,6 +11,7 @@ This practical was conducted in order to simulate the SMSP strategy and asses it
 
 ##PartA: MATLab simulation for the SMSP strategy
 The following is pseudocode representation of the MATLAB algorithm needed to implement a simulated SMSP process.
+
 1. Import the waveform into MA TLAB
 2. Resample the waveform at 16kHz
 3. Compare the original waveform with the resampled waveform
@@ -19,12 +20,12 @@ The following is pseudocode representation of the MATLAB algorithm needed to imp
 6. Pass each channel through a LPF with a cut-off frequency of 200Hz
 7. Sample each channel every 4milliseconds
 8. Find the largest amplitude of the sampled channels
-a. Sort the channels largest to smallest
-b. Take the first index of each vector
+ - Sort the channels largest to smallest
+ - Take the first index of each vector
 9. Normalize the magnitudes of each amplitude to ensure values are between 0 and 1
 10. Plot the normalized amplitudes in an electrodogram
 
-##PartB:Designingahearingaid
+##PartB:Designing a hearing aid
 1. The hearingloss.mat file is first loaded into the MATLAB workspace as per line 9 in Figure 11. 
 2. Coefficient matrix was developed using the MATLAB fdaTool()
 3. The decibel gains given in the assignment outline were loaded into an array
